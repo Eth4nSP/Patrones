@@ -1,18 +1,33 @@
 public class Libro {
-    //datos basicos de un libro
+    private int id;
     private String titulo;
     private String autor;
-
-    public void setTitulo(String titulo) {
+    //constructor base
+    public Libro(int id, String titulo, String autor) {
+        this.id = id;
         this.titulo = titulo;
-    }
-
-    public void setAutor(String autor) {
         this.autor = autor;
     }
-    //retorno del libro
+    //retorno de datos
+    public int getId() { 
+        return id; 
+    }
+    public String getTitulo() { 
+        return titulo; 
+    }
+    public String getAutor() { 
+        return autor; 
+    }
+    //set de datos
+    public void setTitulo(String titulo) { 
+        this.titulo = titulo; 
+    }
+    public void setAutor(String autor) { 
+        this.autor = autor; 
+    }
+
     @Override
     public String toString() {
-        return "Libro: " + titulo + " | Autor: " + autor;
+        return "📖 Libro[id=" + id + ", titulo=" + titulo + ", autor=" + autor + "]";
     }
 }
