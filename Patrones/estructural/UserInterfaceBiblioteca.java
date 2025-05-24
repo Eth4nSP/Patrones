@@ -1,11 +1,11 @@
 import java.util.List;
 
-public class LogicaBiblioteca {
+public class UserInterfaceBiblioteca {
     //simula la clase business
     //todo lo que el usuario debe y puede interactuar
     private LibroDAO libroDAO;
     
-    public LogicaBiblioteca(LibroDAO libroDAO) {
+    public UserInterfaceBiblioteca(LibroDAO libroDAO) {
         this.libroDAO = libroDAO;
     }
 
